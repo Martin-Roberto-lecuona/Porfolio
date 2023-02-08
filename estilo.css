@@ -488,35 +488,42 @@
             margin: 10px 0px;
         }
 
-        .contenedor-skills .skill .barra .barra-progreso1 {
+        .contenedor-skills .skill .barra .barra-progreso95 {
             background-color: #fff;
             width: 95%;
             height: 6px;
-            animation: progreso1 2s forwards;
+            animation: progreso95 2s forwards;
         }
 
-        .contenedor-skills .skill .barra .barra-progreso2 {
+        .contenedor-skills .skill .barra .barra-progreso90 {
             background-color: #fff;
             width: 90%;
             height: 6px;
-            animation: progreso2 2s forwards;
+            animation: progreso90 2s forwards;
         }
 
-        .contenedor-skills .skill .barra .barra-progreso3 {
-            background-color: #fff;
-            width: 90%;
-            height: 6px;
-            animation: progreso3 2s forwards;
-        }
-
-        .contenedor-skills .skill .barra .barra-progreso4 {
+        .contenedor-skills .skill .barra .barra-progreso85 {
             background-color: #fff;
             width: 85%;
             height: 6px;
-            animation: progreso4 2s forwards;
+            animation: progreso85 2s forwards;
         }
 
-        @keyframes progreso1 {
+        .contenedor-skills .skill .barra .barra-progreso80 {
+            background-color: #fff;
+            width: 80%;
+            height: 6px;
+            animation: progreso80 2s forwards;
+        }
+
+        .contenedor-skills .skill .barra .barra-progreso75 {
+            background-color: #fff;
+            width: 75%;
+            height: 6px;
+            animation: progreso75 2s forwards;
+        }
+
+        @keyframes progreso95 {
             0% {
                 width: 0;
             }
@@ -526,7 +533,7 @@
             }
         }
 
-        @keyframes progreso2 {
+        @keyframes progreso90 {
             0% {
                 width: 0;
             }
@@ -536,23 +543,32 @@
             }
         }
 
-        @keyframes progreso3 {
-            0% {
-                width: 0;
-            }
-
-            100% {
-                width: 90%;
-            }
-        }
-
-        @keyframes progreso4 {
+        @keyframes progreso85 {
             0% {
                 width: 0;
             }
 
             100% {
                 width: 85%;
+            }
+        }
+
+        @keyframes progreso80 {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 80%;
+            }
+        }
+        @keyframes progreso75 {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 75%;
             }
         }
 
