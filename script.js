@@ -51,6 +51,8 @@ function efectoHabilidades() {
         document.getElementById("bh").classList.add("barra-progreso90");
         document.getElementById("tm1").classList.add("barra-progreso90");
         document.getElementById("eng").classList.add("barra-progreso90");
+        document.getElementById("xl").classList.add("barra-progreso95");
+
 
 
 

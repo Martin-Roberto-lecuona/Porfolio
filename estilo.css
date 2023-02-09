@@ -212,13 +212,52 @@
         #sobremi .contenedor-foto {
             max-width: 400px;
             margin-right: 80px;
+            /* width: 190px;
+            height: 254px; */
+            background: white;
+            position: relative;
+            display: flex;
+            place-content: center;
+            place-items: center;
+            overflow: hidden;
+            border-radius: 20px;
         }
+        #sobremi .contenedor-foto::before {
+            content: '';
+            position: absolute;
+            width: 25%;
+            background-image: linear-gradient(180deg, #331832, #331832);
+            height: 130%;
+            animation: rotBGimg 3s linear infinite;
+            transition: all 0.2s linear;
+          }
+          
+          @keyframes rotBGimg {
+            from {
+              transform: rotate(0deg);
+            }
+          
+            to {
+              transform: rotate(360deg);
+            }
+          }
+          
+          #sobremi .contenedor-foto::after {
+            content: '';
+            position: absolute;
+            background: white;
+            ;
+            inset: 5px;
+            border-radius: 15px;
+          }  
+        
 
         #sobremi .contenedor-foto img {
             padding: 20px;
             width: 100%;
             border-radius: 20px;
-            background-color: #f3f3f3;
+            z-index:2;
+            /* background-color: white; */
         }
 
         #sobremi .sobremi {
@@ -365,17 +404,10 @@
           .button:hover:before {
             bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
           }
-          
-          
-          
-          
-          
         
 
-
-
         /* *********************/
-        /* seccion S E R V I C I O S */
+        /* seccion H A B I L I D A D E S */
         /* *********************/
 
         #estudios {
@@ -453,7 +485,7 @@
         /* *********************/
 
         .contenedor-skills {
-            background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.8)), url("img/fondo-skills.jpg");
+            background: linear-gradient(#f0544f, rgba(51, 24, 50, 0.8)), url("img/fondo-skills.jpg");
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
