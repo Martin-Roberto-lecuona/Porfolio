@@ -293,7 +293,7 @@
         }
 
         #sobremi .sobremi p {
-            font-size: 14px;
+            font-size: 16px;
             line-height: 25px;
             color: #565656;
             margin-bottom: 12px;
@@ -672,66 +672,30 @@
         /* seccion C O N T A C T O */
         /* *********************/
 
-        #contacto {
-            padding: 100px 15px;
-            background-color: #f3f3f3;
-        }
+        .icon-bar {
+            position: fixed;
+            top: 90%;
+            transform: translateY(-110%);
+            
+            padding: 0.5%;
+            /* padding-left: 1% ;
+            padding-right: 1%;
+            padding-top: 1%;
+            padding-bottom: 1%; */
 
-        #contacto .titulo-seccion {
-            margin-bottom: 20px;
-        }
+            margin-left: 1%;
 
-        #contacto .contenedor-form {
-            max-width: 1100px;
-            margin: auto;
+            font-size: 20px;
+            background-color: #fdf0d5;
+            border-radius: 100px;
+          }
+        .icon-bar a
+        {
+            color: #331832;
         }
-
-        #contacto .contenedor-form .fila {
-            margin-bottom: 15px;
-        }
-
-        #contacto .contenedor-form .mitad {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #contacto .contenedor-form input,
-        #contacto .contenedor-form textarea {
-            padding: 20px;
-            border-radius: 20px;
-            border: none;
-            border: 1px solid #919191;
-        }
-
-        #contacto .contenedor-form .mitad input {
-            width: 48%;
-        }
-
-        #contacto .contenedor-form .input-full {
-            width: 100%;
-        }
-
-        #contacto .titulo-seccion {
-            text-align: center;
-            font-size: 22px;
-            text-transform: uppercase;
-            color: #111135;
-            text-decoration: underline;
-            text-decoration-color: #d3d3d3;
-            text-decoration-thickness: 5px;
-        }
-
-        #contacto .btn-enviar {
-            display: block;
-            margin: auto;
-            cursor: pointer;
-            transition: .2s;
-            padding: 10px 15px !important;
-        }
-
-        #contacto .btn-enviar:hover {
-            background-color: #d81e5bff;
-            color: #fff;
+        .icon-bar :hover
+        {
+            color: #c6d8d3;
         }
 
         /* *********************/
@@ -739,6 +703,8 @@
         /* *********************/
 
         footer {
+            width: 100%;
+            height: 100%;
             background-color: #331832;
             color: #fff;
             text-align: center;
@@ -830,7 +796,7 @@
                 margin: 10px auto;
             }
 
-            /* seccion HABLIDADES MI */
+            /* seccion HABLIDADES */
             .contenedor-skills {
                 padding: 50px 20px;
             }
@@ -847,19 +813,10 @@
             #portfolio .fila .proyecto {
                 margin: 10px auto;
             }
-
             /* seccion CONTACTO */
-            #contacto {
-                padding: 50px 15px;
-            }
+            .icon-bar {
+                font-size: 15px;
+              }
 
-            #contacto .contenedor-form .mitad {
-                margin-bottom: 15px;
-                display: block;
-            }
 
-            #contacto .contenedor-form .mitad input {
-                width: 100%;
-                margin-bottom: 15px;
-            }
         }

@@ -3,20 +3,25 @@
 
 <head>
     <!-- So everything is loaded -->
-    <style>html{visibility: hidden;opacity:0;}</style>
+    <style>
+        html {
+            visibility: hidden;
+            opacity: 0;
+        }
+    </style>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="estilo.css">
     <script src="script.js"></script>
 
@@ -27,18 +32,18 @@
 
     <script type="text/javascript">
         $('html').addClass('hidden');
-        $(document).ready(function() {    // EDIT: From Adam Zerner's comment below: Rather use load: $(window).on('load', function () {...});
-          $('html').show();  // EDIT: Can also use $('html').removeClass('hidden'); 
-         });  
-       </script>
-    
+        $(document).ready(function () {    
+            $('html').show();  
+        });  
+    </script>
+
 
 </head>
 
 <body>
-    <style id= "destroy-html" contenteditable="" style=" display: none;
-    white-space:pre; "> 
-        html{
+    <style id="destroy-html" contenteditable="" style=" display: none;
+    white-space:pre; ">
+        html {
             visibility: visible;
             opacity: 1;
             /* destroy the page as you want  */
@@ -47,21 +52,21 @@
             font-family: 'Source Code Pro';
         }
     </style>
-    
+
     <!-- SECCION I N I C I O -->
     <section id="inicio">
-        
+
         <div class="contenido">
             <header>
                 <div class="contenido-header">
-                    <h1> MRL</h1>
+                    <h1><a href="#" style="all: unset;">MRL</a> </h1>
                     <nav id="nav" class="">
                         <ul id="links">
                             <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
                             <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
                             <li><a href="#estudios" onclick="seleccionar(this)">ESTUDIOS</a></li>
                             <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
-                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                            <!-- <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li> -->
                         </ul>
                     </nav>
 
@@ -69,7 +74,7 @@
                     <div id="icono-nav" onclick="responsiveMenu()">
                         <i class="fa-solid fa-bars"></i>
                     </div>
-                    
+
                     <div class="redes">
                         <button class="destroy-html-button" onclick="RevealDestroy()"></svg>💣What is this?</button>
                     </div>
@@ -92,19 +97,21 @@
             <p class="titulo-seccion">Sobre Mi</p>
             <h2>Hola, Soy <span>Martin Roberto Lecuona</span> </h2>
             <h3>Programador</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur reprehenderit voluptatibus blanditiis nulla adipisci iste fuga expedita, ea exercitationem dicta, similique rem, atque soluta recusandae ipsam autem. Sapiente, quo ducimus?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nam a beatae natus.</p>
+            <p>Soy programador Junior y un apasionado de las nuevas tecnologías. Me considero una persona cooperativa,
+                comprometida y con ganas de aprender</p>
+            <p>Soy un aficionado de la ciencia y el autoconocimiento</p>
+            <p>Mi objetivo es desarrollarme profesionalmente y enfrentar nuevos desafíos</p>
 
             <div data-tooltip="Size: 120Kb" class="button">
                 <div class="button-wrapper">
-                  <div class="text">Mi CV</div>
-                    <span class="icon" onclick="window.open('CV Martin Roberto Lecuona.pdf')" >
+                    <div class="text">Mi CV</div>
+                    <span class="icon" onclick="window.open('CV Martin Roberto Lecuona.pdf')">
                         <img src="img/iconDowload.png" width="25">
                     </span>
-                  </div>
                 </div>
+            </div>
         </div>
-        
+
     </section>
 
     <!-- SECCION E S T U D I O S -->
@@ -140,11 +147,12 @@
                     <li>Web</li>
                     <li>Testing</li>
                 </ul>
-                <p>En la UTN con modalidad a distancia, con una carga horaria de 40 horas y una nota de Sobresaliente</p>
+                <p>En la UTN con modalidad a distancia, con una carga horaria de 40 horas y una nota de Sobresaliente
+                </p>
             </div>
         </div>
         <div class="fila">
-            
+
         </div>
     </section>
 
@@ -251,12 +259,12 @@
                 <div class="" id="tm1"></div>
             </div>
         </div>
-        
+
     </div>
 
     <!-- SECCION PORTAFOLIO -->
     <section id="portfolio">
-        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <h3 class="titulo-seccion">Mi Porfolio</h3>
         <div class="fila">
             <div class="proyecto">
                 <div class="overlay"></div>
@@ -338,24 +346,19 @@
     </section>
 
     <!-- SECCTION C O N T A C T O -->
-    <section id="contacto">
-        <h3 class="titulo-seccion">Contactanos ahora</h3>
-        <div class="contenedor-form">
-            <form action="">
-                <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo *" class="input-mitad">
-                    <input type="email" placeholder="Dirección de Email" class="input-mitad">
-                </div>
-                <div class="fila">
-                    <input type="text" placeholder="Tema..." class="input-full">
-                </div>
-                <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
-                </div>
+    <section class="icon-bar" id="contacto">
+        <a href="mailto:robertlecuona@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <br>
+        
+        <a target= "_blank" href="https://api.whatsapp.com/send?phone=+541139330921&text=Hola, soy ">
+            <i class="fa-brands fa-whatsapp"></i></a>
+        <br>
+        
+        <a target= "_blank" href="https://www.linkedin.com/in/martin-roberto-lecuona"><i class="fa-brands fa-linkedin"></i></a>
+        <br>
 
-                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
-            </form>
-        </div>
+        <a target= "_blank" href="https://github.com/Martin-Roberto-lecuona/Porfolio"><i class="fa-brands fa-github"></i></a>
+        
     </section>
 
     <!-- SECCION FOOTER -->
@@ -364,7 +367,7 @@
         <!-- <div> Icons made by <a href="https://www.flaticon.com/authors/kosonicon" title="kosonicon"> kosonicon </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div> -->
     </footer>
 
-    
+
 </body>
 
 </html>
