@@ -522,10 +522,10 @@
 
         #portfolio .fila .proyecto img {
             width: 1500px;
-            height: 600px;
+            height: 700px;
             ;
             filter: grayscale(1);
-            object-fit: cover;
+            object-fit: contain;
             transition: .2s;
         }
 
