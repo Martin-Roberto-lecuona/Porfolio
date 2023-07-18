@@ -521,11 +521,10 @@
         }
 
         #portfolio .fila .proyecto img {
-            width: 1500px;
-            height: 700px;
-            ;
+            width: 1000px;
+            height: 1000px;
             filter: grayscale(1);
-            object-fit: scale-down;
+            object-fit: cover;
             transition: .2s;
         }
 
